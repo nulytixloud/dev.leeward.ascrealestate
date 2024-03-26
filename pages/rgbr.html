@@ -1,43 +1,43 @@
 
-<!doctype html>
-<html lang="en">
+<DOCUMENT! html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Nulytix Cloud, Inc">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
       rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
       crossorigin="anonymous">
 
-    <title>ASC Real Estate - Leeward</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
-
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-
-    <style>
-      .headline
-      {
-        text-align: center;
-        position: relative;
-        top:50%;
-        /*background: #BBB3A6;*/
-        border-radius: 25px;
-        display: block;
-        opacity: 1
-      }
-    </style>
+    <title>ASC Real Estate - Atlantic South Commercial Real Estate - Short Term Vacation Rental Website - Tour Our Leeward Property - Check Out Leeward Amentities and Offerings</title>
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+      />
+      <!-- Google Fonts -->
+      <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+      />
+      <!-- MDB -->
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+      rel="stylesheet"
+      />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#load_carousel").load("/templates/carousel.html #includeCarousel");
+        $("#load_rooms").load("/templates/roomcards.html #includeRooms");
+        $("#load_navbar").load("/templates/navbar.html #includeNavbar");
+        $("#load_footer").load("/templates/footer.html #includeFooter");
+      });
+    </script>
   </head>
-  
   <body>
     <header>
-      <div id="includeNavbar"></div>
+      <div id="load_navbar"></div>
     </header>
 
     <main role="main">
@@ -50,7 +50,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active center">
-            <img class="first-slide" src=".\img\IMG_1303_1.JPG" class="d-block w-100" width="100%" height="500px" alt="Beach View">
+            <img class="first-slide" src="/img/IMG_1303_1.JPG" class="d-block w-100" width="100%" height="500px" alt="Beach View">
             <div class="container headline">
               <div class="carousel-caption">
                 <h1>Pristine Views</h1>
@@ -62,7 +62,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src=".\img\IMG_6202_1.JPG" class="d-block w-100" width="100%" height="500px" alt="Second slide">
+            <img class="second-slide" src="/img/IMG_6202_1.JPG" class="d-block w-100" width="100%" height="500px" alt="Second slide">
             <div class="container headline">
               <div class="carousel-caption">
                 <h1>Amazing Sunsets</h1>
@@ -74,7 +74,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src=".\img\IMG_6200_1.jpg" class="d-block w-100" width="100%" height="500px" alt="Third slide">
+            <img class="third-slide" src="/img/IMG_6200_1.jpg" class="d-block w-100" width="100%" height="500px" alt="Third slide">
             <div class="container headline">
               <div class="carousel-caption">
                 <h1>White Beach</h1>
@@ -103,29 +103,9 @@
         <br>        
         <hr class="featurette-divider">
         <br>
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src=".\img\image000005 2.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Master Bedroom</h2>
-            <p>Take a tour of our master bedroom here. Accomodations are complete with private bathroom, two sinks, ample closet space for all your travel needs. This room is also equipped with a smart TV configured for streaming.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src=".\img\imagejpeg_1.JPG" alt="Generic placeholder image" width="140" height="140">
-            <h2>Guest Bedroom</h2>
-            <p>Traveling with guests? Take a tour of our gest bedroom accomodations, complete with bathroom and closet space. This room is also equipped with a smart TV configured for streaming.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src=".\img\image000001.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Nook (Bunkbed)</h2>
-            <p>Traveling with little ones? Take a peek at our Nook rom equipped with a bunkbed!</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-
+        <!-- roomcards -->
+        <div id="load_rooms"></div>
+        
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">
@@ -136,7 +116,7 @@
             <p class="lead">You are greeted with the breath of cool beach air.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src=".\img\image000003.jpg" alt="Generic placeholder image" width="500" height="550">
+            <img class="featurette-image img-fluid mx-auto" src="/img/image000003.jpg" alt="Generic placeholder image" width="500" height="550">
         </div>
         </div>
 
@@ -150,7 +130,7 @@
             <p class="lead">Vacation with <i>peace of mind</i>. Relax with the comfort and safety of being in a private golf community with 24/7 security.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src=".\img\imagejpeg_2.JPG" alt="Generic placeholder image" width="350" height="450">
+            <img class="featurette-image img-fluid mx-auto" src="/img/imagejpeg_2.JPG" alt="Generic placeholder image" width="350" height="450">
           </div>
         </div>
 
@@ -162,7 +142,7 @@
             <p class="lead">You cant get any closer to the beach than being <i>on</i> the beach.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src=".\img\IMG_5641.jpg" alt="Generic placeholder image" width="600" height="450" >
+            <img class="featurette-image img-fluid mx-auto" src="/img/IMG_5641.jpg" alt="Generic placeholder image" width="600" height="450" >
           </div>
         </div>
 
@@ -173,40 +153,19 @@
       </div><!-- /.container -->
 
 
-      <!-- FOOTER -->
-      <footer class="text-center text-white" style="background-color: #8ECCFF">
-        <!-- Grid container -->
-        <br>
-        <div class="container pb-4">
-          <!-- Section: Social media -->
-            <div class="row border rounded-5">
-              <section class="p-4 text-center w-100">
-                
-                <a 
-                  class="btn text-white mb-1" 
-                  data-mdb-ripple-init 
-                  style="background-color: #ac2bac;" 
-                  href="https://www.instagram.com/atlanticsouthcommercial_llc" 
-                  role="button">
-                  <i class="fab fa-instagram"></i>
+      <div id="load_footer">
 
-                </a>
-              </section>
-            </div>
-                <!-- Section: Social media -->
-            <iv class="row">
-              <p class="float-right"><a href="#">Back to top</a></p>
-              <p>&copy; 2023 - 2024 Atlantic South Commercial Real Estate, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-
-        </div>
-      </footer>
+      </div>
+      <div class="row text-center text-white" style="background-color: #36B6D6; color: white;">
+        <p style="text-align: center"><a href="#">Back to top</a></p>
+        <p>&copy; 2023 - <script>document.write(new Date().getFullYear())</script> 
+        | Atlantic South Commercial Real Estate | <a href="/pages/privacy.html">Privacy</a> | <a href="/pages/terms.html">Terms</a></p>
+    </div>
     </main>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script><script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
   </body>
 </html>

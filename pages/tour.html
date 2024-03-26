@@ -1,5 +1,5 @@
 
-<html lang="en">
+<DOCUMENT! html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,9 +14,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#load_carousel").load("./templates/carousel.html #includeCarousel");
-        $("#load_navbar").load("./templates/navbar.html #includeNavbar");
-        $("#load_footer").load("./templates/footer.html #includeFooter");
+        $("#load_carousel").load("/templates/carousel.html #includeCarousel");
+        $("#load_rooms").load("/templates/roomcards.html #includeRooms");
+        $("#load_navbar").load("/templates/navbar.html #includeNavbar");
+        $("#load_footer").load("/templates/footer.html #includeFooter");
       });
     </script>
     <link
@@ -51,16 +52,20 @@
                 </div>
             </span>
             <hr class="featurette-divider">
+            
+        <!-- roomcards -->
+        <div id="load_rooms"></div>
+
       </div>
-      
+
       <!-- FOOTER -->
       <div id="load_footer">
 
       </div>
-      <div class="row text-center text-white" style="background-color: #8ECCFF; color: white;">
+      <div class="row text-center text-white" style="background-color: #36B6D6; color: white;">
           <p style="text-align: center"><a href="#">Back to top</a></p>
           <p>&copy; 2023 - <script>document.write(new Date().getFullYear())</script> 
-          | Atlantic South Commercial Real Estate | <a href="./privacy.html">Privacy</a> | <a href="./terms.html">Terms</a></p>
+          | Atlantic South Commercial Real Estate | <a href="/pages/privacy.html">Privacy</a> | <a href="/pages/terms.html">Terms</a></p>
       </div>
     </main>
 
